@@ -1,38 +1,133 @@
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App {
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.map-container {
+  height: 60vh;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coordinate-form {
+  margin-top: 20px;
+}
+
+.location-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.location-list li {
+  margin: 5px 0;
+}
+
+.App {
+  font-family: 'Arial', sans-serif; /* Use the font from the OffshoreLinks website if different */
+  color: #333; /* Adjust the color to match the website */
+  background-color: #f4f4f4; /* Use the background color from the OffshoreLinks website */
+}
+
+.coordinate-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 300px; /* Adjust as necessary */
+  margin-bottom: 20px;
+  margin:auto;
+  margin-top:10px;
+}
+
+.coordinate-form input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.coordinate-form button {
+  background-color: #4CAF50; /* Green color, adjust to match the website */
   color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.coordinate-form button:hover {
+  background-color: #45a049; /* Darker green, adjust to match the website */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-list li {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.location-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.location-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-list li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.location-list li input[type="text"] {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; /* Allows the input to grow and fill the space */
+}
+
+.location-list li button {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.location-list li button:hover {
+  background-color: #005f73; /* Darker blue */
+}
+
+.location-list li button.delete {
+  background-color: #f44336; /* Red */
+}
+
+.location-list li button.delete:hover {
+  background-color: #c62828; /* Darker red */
 }
